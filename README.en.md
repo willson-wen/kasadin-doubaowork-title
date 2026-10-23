@@ -53,7 +53,7 @@ DoubaoWork auto-loads Skills under `workspace/.user_skills/`. Just put this repo
 SKILLS_DIR="$HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.user_skills"
 
 # 2. Clone into it
-git clone https://github.com/<your-username>/kasadin-doubaowork-title.git "$SKILLS_DIR/kasadin-doubaowork-title"
+git clone https://github.com/willson-wen/kasadin-doubaowork-title.git "$SKILLS_DIR/kasadin-doubaowork-title"
 ```
 
 Or simply tell DoubaoWork: "Install the conversation-naming Skill kasadin-doubaowork-title."

@@ -53,7 +53,7 @@
 SKILLS_DIR="$HOME/Library/Application Support/DoubaoWork/Default/.doubaowork/agent_mode/workspace/.user_skills"
 
 # 2. 克隆到该目录
-git clone https://github.com/<your-username>/kasadin-doubaowork-title.git "$SKILLS_DIR/kasadin-doubaowork-title"
+git clone https://github.com/willson-wen/kasadin-doubaowork-title.git "$SKILLS_DIR/kasadin-doubaowork-title"
 ```
 
 也可以直接在豆包工作里说：“帮我安装 kasadin-doubaowork-title 这个对话命名 Skill。”
