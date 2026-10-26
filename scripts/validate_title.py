@@ -2,8 +2,8 @@
 """校验豆包工作对话标题是否符合「类别 emoji 对象｜目标」规范。
 
 用法：
-  python3 validate_title.py "🧩 邮箱注册｜修复"
-  python3 validate_title.py --json "📝 AI热点日报｜2026-08-15"
+  python3 validate_title.py "🧩 待办清单App｜修复"
+  python3 validate_title.py --json "📝 团队周报｜2026-10-26"
   printf '%s\n' "标题1" "标题2" | python3 validate_title.py
 
 退出码：全部合法 0，存在非法 1。

@@ -10,11 +10,11 @@ English | [中文](README.md)
 
 | Before | After |
 | --- | --- |
-| new chat | 🧩 Email signup｜Fix |
-| Reply to Chinese greeting | 🔎 H3 / H3 Max｜Model comparison |
-| Keep editing | 🎬 Orion review video｜Title planning |
-| AI news daily | 📝 AI news daily｜2026-08-15 |
-| (empty conversation) | 💬 Greeting chat｜2026-10-23 |
+| new chat | 🧩 Todo list app｜Fix |
+| Help me compare | 🔎 Headphones A / B｜Spec comparison |
+| Keep editing | 🎬 Product promo video｜Script planning |
+| This week's report | 📝 Team weekly report｜2026-10-26 |
+| (empty conversation) | 💬 Greeting chat｜2026-10-26 |
 
 ## Title format
 
@@ -24,10 +24,10 @@ Every title follows **"category emoji + subject｜goal"**:
 category emoji + one space + subject + full-width "｜" + core goal
 ```
 
-- **Subject first**: put identifying words like "email signup", "login form", or "H3" up front; omit the outer project name by default.
+- **Subject first**: put identifying words like "todo list", "login form", or "headphones" up front; omit the outer project name by default.
 - **Fixed categories**: 8 categories chosen by the lasting work product; the icon doesn't switch just because of the last action.
 - **Stable names**: don't rename a title whose main line is already accurate; actions like "continue" or "push" never replace the main thread.
-- **Follows your language**: name in the user's dominant language and keep product names, e.g. `🧩 Email verification｜Fix expiry`.
+- **Follows your language**: name in the user's dominant language and keep product names, e.g. `🧩 Login verification｜Fix expiry`.
 - **Date recurring work**: daily or weekly series are distinguished by date or issue number.
 - **No forced naming**: when there's only a greeting or the conversation is truly empty, don't invent a subject.
 
@@ -76,11 +76,11 @@ Just say to DoubaoWork:
 
 ```bash
 # Single title
-python3 scripts/validate_title.py "🧩 Email signup｜Fix"
+python3 scripts/validate_title.py "🧩 Todo list app｜Fix"
 # Batch (one title per line on stdin)
 printf '%s\n' "Title 1" "Title 2" | python3 scripts/validate_title.py
 # JSON output
-python3 scripts/validate_title.py --json "📝 AI news daily｜2026-08-15"
+python3 scripts/validate_title.py --json "📝 Team weekly report｜2026-10-26"
 ```
 
 Valid titles exit with code 0 and print `OK`; invalid ones exit with code 1 and print the reason. Standard library only, compatible with Python 3.9+.

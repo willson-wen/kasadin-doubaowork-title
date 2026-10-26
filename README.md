@@ -10,11 +10,11 @@
 
 | 原来的标题 | 整理后的标题 |
 | --- | --- |
-| new chat | 🧩 邮箱注册｜修复 |
-| 回应中文问候 | 🔎 H3 / H3 Max｜模型对比 |
-| 继续修改 | 🎬 Orion 评测视频｜标题策划 |
-| AI热点日报 | 📝 AI热点日报｜2026-08-15 |
-| （空白对话） | 💬 问候对话｜2026-10-23 |
+| new chat | 🧩 待办清单App｜修复 |
+| 帮我对比一下 | 🔎 降噪耳机A / B｜参数对比 |
+| 继续修改 | 🎬 产品宣传片｜脚本策划 |
+| 这周的周报 | 📝 团队周报｜2026-10-26 |
+| （空白对话） | 💬 问候对话｜2026-10-26 |
 
 ## 标题结构
 
@@ -24,10 +24,10 @@
 类别 emoji + 一个空格 + 对象 + 全角「｜」+ 核心目标
 ```
 
-- **对象在前**：把“邮箱注册”“登录表单”“H3”等辨识词放到前面，默认省略外层项目名。
+- **对象在前**：把“待办清单”“登录表单”“降噪耳机”等辨识词放到前面，默认省略外层项目名。
 - **类别固定**：8 个类别，按持续工作的产物选，不会因为最后一个动作就切换图标。
 - **名称稳定**：主线准确的标题不重复改名；“继续”“推送”等动作不会取代主线。
-- **跟随语言**：按用户主要交流语言命名，保留产品名，如 `🧩 Email verification｜Fix expiry`。
+- **跟随语言**：按用户主要交流语言命名，保留产品名，如 `🧩 Login verification｜Fix expiry`。
 - **周期加日期**：日报、周报等系列内容用日期或期号区分。
 - **不强行命名**：只有问候或确实空白时，不臆造对象。
 
@@ -76,11 +76,11 @@ git clone https://github.com/willson-wen/kasadin-doubaowork-title.git "$SKILLS_D
 
 ```bash
 # 单条
-python3 scripts/validate_title.py "🧩 邮箱注册｜修复"
+python3 scripts/validate_title.py "🧩 待办清单App｜修复"
 # 批量（stdin 每行一个）
 printf '%s\n' "标题1" "标题2" | python3 scripts/validate_title.py
 # JSON 结果
-python3 scripts/validate_title.py --json "📝 AI热点日报｜2026-08-15"
+python3 scripts/validate_title.py --json "📝 团队周报｜2026-10-26"
 ```
 
 合法返回退出码 0 并打印 `OK`，非法返回退出码 1 并给出原因。纯标准库实现，兼容 Python 3.9+。
